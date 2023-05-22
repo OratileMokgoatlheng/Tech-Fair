@@ -87,6 +87,9 @@ i{
 .submit:hover{
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
+.error-message{
+    color: red;
+}
 .two-col{
     display: flex;
     flex-direction: row;

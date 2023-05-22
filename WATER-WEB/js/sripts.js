@@ -39,15 +39,19 @@ loginForm.addEventListener("click", function() {
     //event.preventDefault(); // Prevent form submission
 
     // Get the entered username and password
-    const username = document.querySelector(".signin").querySelector("input[type='text']").value;
-    const password = document.querySelector(".signin").querySelector("input[type='password']").value;
+    const username = document.querySelector(".signin").querySelector(".signin .input-field input[type='text']").value;
+    const password = document.querySelector(".signin").querySelector(".signin .input-field input[type='password']").value;
 
     // Perform login authentication here
     if (username === "example@gmail.com" && password === "password") {
+        //hide login form
+        loginBox.style.display = "none";
         // Show the main form
-        document.querySelector("main-form").style.display = "block";
+        const mainForm = document.querySelector(".main-form")
+        mainForm.style.display = "block";
     } else {
         // Display error message
-        alert("Incorrect password or username. Try again.");
+        const getErrorMessage = document.querySelector(".error-message");
+        getErrorMessage.style.display = 'block'
     }
 });
