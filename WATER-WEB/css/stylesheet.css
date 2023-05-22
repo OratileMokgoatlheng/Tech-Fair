@@ -2,7 +2,7 @@
     font-family: 'poppins' ,sans-serif;
 }
 body{
-    background-image: url("OLD\ IMAGE.avif");
+    background-image: url("/WATER-WEB/media/OLD\ IMAGE.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -10,8 +10,11 @@ body{
     backdrop-filter: blur(1.5px)
     
 }
+
+
+
 .box{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
@@ -57,7 +60,19 @@ i{
 ::-webkit-input-placeholder{
     color: #ffffff;
 }
-.submit{
+.submit2{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ;
+}
+.submit1{
     border: none;
     border-radius: 30px;
     font-size: 15px;
